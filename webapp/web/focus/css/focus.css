@@ -1,0 +1,51 @@
+ul,li,body{margin: 0;padding: 0;list-style: none;}
+.focus{
+	width: 240px;
+	height: 350px;
+	margin: 100px auto;
+	position: relative;
+}
+.focus .pic li{
+	position: absolute;
+	display: none;
+}
+.focus .pic li.cur{
+	display: block;
+}
+.focus .text{
+	position: absolute;
+	bottom: 0;
+	width: 240px;
+	height: 36px;
+	background: rgba(255,255,255,0.5);
+
+}
+.focus .text li{
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+.focus .text a{
+	display: block;
+	font-size: 14px;
+	width: 200px;
+	color: #666;
+	text-decoration: none;
+	margin: 11px 20px;
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+}
+.focus .text li.cur{
+	display: block;
+}
+.focus .link a{
+	position: absolute;
+	bottom: -3px;
+	font-size: 20px;
+	padding: 8px;
+	color: #000;
+	text-decoration: none;
+}
+.focus .link a.esc{left: -6px;}
+.focus .link a.next{right: -6px;}
